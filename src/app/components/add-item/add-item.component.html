@@ -1,0 +1,5 @@
+<form (ngSubmit)="addTask()" [formGroup]="form">
+  <!-- <input [(ngModel)]="taskTitle" type="text" [ngModelOptions]="{standalone: true}"> //another way to do - less good -->
+  <input type="text" formControlName="task" [(ngModel)]="name">
+  <button type="submit">Add Task</button>
+</form>

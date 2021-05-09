@@ -1,0 +1,35 @@
+:host {
+  margin: 20px;
+
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  width: 120px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 6px;
+  background-color: black;
+  color: rgb(241, 222, 47);
+  border: none;
+  font-weight: bold;
+  box-shadow: 0 10px 10px -5px rgba(0,0,0,.3);
+
+
+  &:hover {
+    color: black;
+    background-color: rgb(241, 222, 47);
+
+}}
+
+input {
+  height: 40px;
+  width: 380px;
+  margin: 0;
+  font-size: 20px;
+  border-radius: 6px;
+  box-shadow: 0 10px 10px -10px rgba(0,0,0,.3);
+  // margin-right: 5px;
+}

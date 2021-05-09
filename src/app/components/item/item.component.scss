@@ -1,0 +1,74 @@
+:host {
+  display: flex;
+  justify-content: center;
+}
+
+div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // border: 1px solid black;
+  // border-radius: 4px;
+  width: 500px;
+
+  button {
+    border: none;
+    height: 24px;
+    // background-color: #559fdb;
+    background-color: transparent;
+    cursor: pointer;
+    color:white;
+
+    &:hover {
+      background-color: rgb(179, 177, 177);
+    }
+  }
+
+  &.completed {
+    background-color: rgb(190, 243, 190);
+    outline: none;
+
+    button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgb(102, 141, 102);
+      }
+    }
+  }
+
+}
+
+
+
+input[type=checkbox] {
+  display: none;
+  user-select: none;
+
+  + label {
+    user-select: none;
+    &::before {
+     margin: 0 10px;
+     content: "☑️" ;
+     user-select: none;
+    }
+  }
+
+  &:checked {
+
+    + label {
+      outline: none;
+
+      &::before {
+        content: "✅";
+        outline: none;
+      }
+    }
+  }
+}
+
+button {
+  margin: 10px;
+}

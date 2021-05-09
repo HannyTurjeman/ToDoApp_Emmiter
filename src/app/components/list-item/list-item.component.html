@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let item of taskDetails">
+    <app-item  [item]="item" (itemToDelete$)="removeItem($event)"></app-item>
+  </li>
+</ul>
+
+
