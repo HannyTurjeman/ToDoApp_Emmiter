@@ -29,7 +29,7 @@ export class AddItemComponent implements OnInit {
       this.name ='';
 
     } else {
-      alert("Please add task")
+      alert("Please add more then 3 letters task")
     }
   }
 
