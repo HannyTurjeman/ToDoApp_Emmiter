@@ -27,5 +27,8 @@ ul {
     @media screen and (max-width: 500px) {
       width: 300px;
     }
+    @media screen and (max-width: 300px) {
+      width: 200px;
+    }
   }
 }
