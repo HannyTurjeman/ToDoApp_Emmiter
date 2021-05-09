@@ -1,6 +1,6 @@
 <div class="item-list" [class.completed]="item.done">
   <span>
-    <input type="checkbox" [id]="item.id" (change)="toggleDone()">
+    <input type="checkbox" [id]="item.id" (change)="toggleDone()" [checked]="item.done">
     <label [for]="item.id">{{item.title}}</label>
   </span>
   <button (click)="deleteItem(item.id)">✖️</button>
